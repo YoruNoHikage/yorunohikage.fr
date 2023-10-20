@@ -1,0 +1,106 @@
+body {
+	background: #222;
+	margin: 0;
+	padding: 0;
+}
+
+#qcm {
+	margin: auto;
+	text-align: center;
+}
+
+#ask {
+	font-size: 3em;
+	font-family: Tahoma;
+	color: #fff;
+}
+
+#answer {
+	padding: 20px;
+}
+
+#score p {
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 5px;
+}
+
+#infos {
+	color: #555;
+	margin: auto;
+	border-collapse: collapse;
+	font-family: Helvetica, sans-serif;
+}
+
+#infos thead {
+	font-weight: bold;
+}
+
+#infos tr td {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 10px;
+}
+
+#infos tr td:first-child {
+	border-left: none;
+}
+
+#infos tr td:last-child {
+	border-right: none;
+}
+
+.value {
+	font-size: 2em;
+}
+
+.value:first-letter {
+	text-transform: uppercase;
+}
+
+.good { color: #2e2;}
+.bad { color: #e11;}
+
+#form p {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+#score_0 {	background: #F00;}
+#score_1 {	background: #F80;}
+#score_2 {	background: #8F0;}
+#score_3 {	background: #0F0;}
+
+#help {
+	margin: 10px 0;
+}
+
+#help a {
+	text-decoration: none;
+	color: #008fff;
+}
+
+#help a.help_button, #about {
+	background: #333;
+    box-shadow: 0 0 3px #000 inset;
+}
+
+#help a.help_button {
+	padding: 5px 15px;
+	font-size: 2em;
+	width: 30px;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+#help a:hover {
+	color: #555;
+}
+
+#about {
+	color: #aaa;
+	padding: 5px;
+	margin-top: 10px;
+}

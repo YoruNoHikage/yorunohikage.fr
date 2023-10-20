@@ -1,0 +1,152 @@
+body {
+	margin: 0;
+	padding: 0 0 0 300px;
+	min-height: 100%;
+	height: 100%;
+	/*background: #222;*/
+	background: url("../images/background.png") #1b1;
+	background-size: cover;
+	font-family: Tahoma, sans-serif;
+	color: #fff;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h3, h4, h5, h6 {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+.picture {
+	background: #fff;
+	padding: 5px 5px 1px 5px;
+	box-shadow: 0 0 5px #000;
+	border: 1px solid #aaa;
+	display: inline-block;
+	position: relative;
+}
+
+.picture span {
+	position: absolute;
+	bottom: 0;
+	background: #000;
+	opacity: 0;
+	margin: 0;
+	width: 100%;
+	left: 0;
+	color: #fff;
+	transition: opacity 500ms ease-out;
+	/* to cover the border of the parent */
+	margin: -1px;
+	padding: 6px 1px;
+}
+
+.picture a:hover span {
+	opacity: 0.8;
+}
+
+#sidebar {
+	width: 300px;
+	/*background: #333;*/
+	background: rgba(50, 50, 50, 0.5);
+	position: fixed;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #fff;
+	box-shadow: 0 0 8px #000;
+}
+
+#sidebar header {
+	padding: 5px;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+nav ul li a:first-letter {
+	font-size: 1.3em;
+}
+
+nav ul li a:hover {
+	background: rgba(17, 17, 17, 0.5);
+	color: #008fff;
+}
+
+nav ul li a.selected {
+	background: rgba(0, 0, 0, 0.5);
+	color: #008fff;
+}
+
+#content {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.projects {
+	margin: auto;
+	text-align: center;
+}
+
+.projects div {
+	margin: 10px;
+}
+
+@media (max-width: 640px) {
+	body {
+		background: #1b1;
+		padding: 0;
+		margin: 0;
+	}
+	
+	img {
+		height: auto; width: auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	h1 {
+		font-size: 1em;
+	}
+	
+	nav ul {
+		margin: 0;
+	}
+	
+	nav ul li {
+		display: inline-block;
+		margin: 0;
+	}
+	
+	#sidebar {
+		position: relative;
+		width: auto;
+	}
+}
+
+@media (max-device-width:768px) and (orientation: landscape) {
+	html {
+		-webkit-text-size-adjust: 100%;
+	}
+}

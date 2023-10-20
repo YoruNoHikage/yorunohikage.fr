@@ -1,0 +1,6 @@
+RewriteEngine on
+
+ErrorDocument 404 404.html
+
+RewriteRule ^$ /switchcode/web/index.php?f=index [L]
+RewriteRule ^([a-z0-9-/]+)$ /switchcode/web/index.php?f=$1 [L]
